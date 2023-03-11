@@ -1,0 +1,269 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #F8F9FE;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main {
+  flex-grow: 1;
+}
+
+/* header */
+.container {
+  display: flex;
+}
+
+/* humburger */
+.hunburger {
+  max-width: 68px;
+  height: 1182px;
+  padding: 50px 15px;
+  flex-direction: column;
+  margin: 0;
+  background: #FFFFFF;
+}
+
+.hunburger__link {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.hunburger__link:hover {
+  opacity: 0.7;
+}
+
+.hunburger__link:active {
+  opacity: 0.4;
+}
+
+.hunburger__img{
+  margin-bottom: 35px;
+}
+
+
+/* navbar */
+.navbar-top{
+  max-width: 1300px;
+  height: 80px;
+  background: #5E72E4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  margin: 0;
+}
+
+.navbar-top__input {
+  max-width: 290px;
+  height: 46px;
+  border-radius: 23px;
+  border: none;
+  padding: 10px;
+}
+
+.navbar-top-rightBox {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-top-rightBox__heading {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.navba-top-rightBox__img {
+  width: 36px;
+  height: 36px;
+  border-radius: 40px;
+  margin-right: 8px;
+}
+
+.navbar-top-rightBox__imgOne, .navbar-top-rightBox__imgTwo {
+  margin-right: 20px;
+}
+
+
+
+/* navbar-main */
+
+.navbar-main {
+  max-width: 1300px;
+  height: 300px;
+  padding: 25px 30px;
+  background: #5E72E4;
+}
+
+.navbar-main-top {
+  justify-content: space-between;
+  display: flex;
+  padding: 20px 0;
+}
+
+.navbar-main-topleft {
+  display: flex;
+  padding: 0;
+}
+
+.navbar-main-topright__btn {
+  width: auto;
+  box-shadow: 0px 4px 6px rgba(50, 50, 93, 0.11), 0px 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  border: none;
+  margin: 0 5px;
+  padding: 6px 10px;
+  color: #5E72E4;
+  cursor: pointer;
+}
+
+.navbar-main-topright__btn:hover {
+  opacity: 0.7;
+  color: #333;
+}
+
+.navbar-main-topright__btn:active {
+  opacity: 0.4;
+  color: #ffffff;
+}
+
+.navbar-main-top__heading {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-main-top__heading-One, .navbar-main-top__heading-Two {
+  font-family: 'Open Sans';
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #F6F9FC;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.navbar-main-top__img {
+  margin-left: 15px;
+}
+
+.navbar-bootom {
+  display: flex;
+  margin-left: -10px;
+  align-items: center;
+}
+
+
+.navbar-bootom__box {
+  width: 427px;
+  height: 120px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  padding: 17px 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.navbar-bootom__box:hover {
+  opacity: 0.7;
+}
+
+.navbar-bootom__box:active {
+  opacity: 0.4;
+}
+
+.navbar-bootom__heading {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  color: #8898AA;
+}
+
+
+.navbar-bootom__heading-one {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #32325D;
+}
+
+.green {
+  color: green;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.navbar-bootom__hedinf-two {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #525F7F;
+  margin-top: 25px;
+}
+
+.navbar-bootom-btn {
+  width: 48px;
+  height: 48px;
+  padding: 15px;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #F5365C 0%, #F56636 100%);
+}
