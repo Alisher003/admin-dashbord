@@ -49,16 +49,17 @@ body {
 
 /* humburger */
 .hunburger {
+  position: absolute;
+  display: none;
   max-width: 68px;
   height: 1182px;
-  padding: 50px 15px;
   flex-direction: column;
   margin: 0;
   background: #FFFFFF;
 }
 
 .hunburger__link {
-  padding: 0;
+  padding: 35px 25px;
   margin: 0;
   text-decoration: none;
 }
@@ -75,16 +76,22 @@ body {
   margin-bottom: 35px;
 }
 
+.hunburgerbtn {
+  position: absolute;
+  padding: 20px 20px;
+  background-color: transparent;
+  border: none;
+}
 
 /* navbar */
 .navbar-top{
-  max-width: 1300px;
+  max-width: auto;
   height: 80px;
   background: #5E72E4;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 30px;
+  padding: 0px 70px;
   margin: 0;
 }
 
@@ -126,9 +133,9 @@ body {
 /* navbar-main */
 
 .navbar-main {
-  max-width: 1300px;
+  max-width: auto;
   height: 300px;
-  padding: 25px 30px;
+  padding: 25px 25px 25px 75px;
   background: #5E72E4;
 }
 
@@ -266,4 +273,25 @@ body {
   border: none;
   border-radius: 50%;
   background: linear-gradient(90deg, #F5365C 0%, #F56636 100%);
+}
+
+/* main */
+
+.math {
+  display: flex;
+}
+
+
+.math-chartimg {
+  margin-left: auto;
+  padding: 0;
+  margin-top: -80px;
+}
+
+.info-box {
+  max-width: 579px;
+  padding: 22px 25px;
+  height: 420px;
+  background: #FFFFFF;
+  border-radius: 6px;
 }
